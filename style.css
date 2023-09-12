@@ -1,0 +1,27 @@
+:root {
+  --tint: 20, 20, 20;
+  --pl-universal: 30px;
+}
+
+body {
+  background-color: rgb(var(--tint));
+}
+.bg-blackish {
+  background-color: rgb(var(--tint));
+}
+
+h5,
+h3 {
+  color: white;
+}
+
+section,
+main {
+  padding-left: var(--pl-universal);
+}
+/* RICORDARE DI MODIFICARE IL BOTTONE */
+.btn {
+  border-radius: 0%;
+  border: 2px solid white;
+  background-color: black;
+}
