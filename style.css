@@ -1,6 +1,8 @@
 :root {
   --tint: 20, 20, 20;
   --pl-universal: 30px;
+  --genres-button: 229, 9, 20;
+  --genres-button-border: 133, 0, 0;
 }
 
 body {
@@ -20,8 +22,30 @@ main {
   padding-left: var(--pl-universal);
 }
 /* RICORDARE DI MODIFICARE IL BOTTONE */
-.btn {
+.btn-sm {
   border-radius: 0%;
   border: 2px solid white;
   background-color: black;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: rgba(var(--genres-button));
+  border-color: rgba(var(--genres-button-border));
+}
+
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show > .btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: rgba(var(--genres-button));
+  border-color: rgba(var(--genres-button-border));
+}
+
+.btn-primary.focus,
+.btn-primary:focus {
+  color: #fff;
+  background-color: rgba(var(--genres-button));
+  border-color: rgba(var(--genres-button-border));
+  box-shadow: 0 0 0 0.2rem rgba(var(--genres-button, 0.5));
 }
