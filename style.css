@@ -49,3 +49,36 @@ main {
   border-color: rgba(var(--genres-button-border));
   box-shadow: 0 0 0 0.2rem rgba(var(--genres-button, 0.5));
 }
+
+/* btn-group mr-auto after navbar */
+
+.btn-secondary {
+  color: #fff;
+  background-color: #000000;
+  border-color: #ffffff;
+}
+
+.btn:not(nav .btn:first-of-type) {
+  display: inline-block;
+  font-weight: 400;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid white;
+  padding: 0.175rem 0.95rem;
+  font-size: 0.5rem;
+  line-height: 1;
+  border-radius: 0;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out;
+}
+
+.btn-group:nth-of-type(3) {
+  position: relative;
+  transform: scale(0.75);
+  top: -0.34rem;
+}
