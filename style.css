@@ -96,3 +96,21 @@ footer {
 .icons svg {
   margin-right: 0.3rem;
 }
+
+.footer-button {
+  position: absolute;
+  top: 9rem;
+}
+
+.copyright {
+  position: absolute;
+  bottom: -7rem;
+  white-space: nowrap;
+}
+
+footer .sm-icons {
+  transform: scale(1.2);
+}
+footer .sm-icons svg {
+  margin-right: 0.3rem;
+}
