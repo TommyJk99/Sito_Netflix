@@ -82,6 +82,18 @@ main {
   top: -0.34rem;
 }
 
+/* CAROUSELS */
+/* invisible buttons */
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  opacity: 0;
+}
+
+h5 {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
 footer {
   color: white;
 }
