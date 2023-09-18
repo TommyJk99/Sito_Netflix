@@ -9,6 +9,7 @@ body {
   background-color: rgb(var(--tint));
   margin-bottom: 7cap;
 }
+
 .bg-blackish {
   background-color: rgb(var(--tint));
 }
@@ -96,7 +97,8 @@ nav {
 
 .carousel-control-next,
 .carousel-control-prev {
-  width: 5%;
+  width: 7%;
+  z-index: 1000;
 }
 
 h5 {
@@ -138,9 +140,9 @@ footer button {
 }
 
 main img:hover {
-  transform: scale(1.2);
   position: relative;
-  filter: blur(1.5px);
+  transform: scale(1.2);
+  filter: brightness(0.4);
   z-index: 999;
 }
 
@@ -150,6 +152,14 @@ main img {
 
 .carousel-inner {
   overflow: visible;
+}
+
+main img:hover + svg {
+  position: relative;
+  top: -2rem;
+  z-index: 999999;
+  color: white;
+  overflow: hidden;
 }
 
 footer .sm-icons {
