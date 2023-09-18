@@ -95,7 +95,13 @@ h5 {
 }
 
 footer {
-  color: white;
+  color: #808080;
+  margin-top: 5rem;
+  font-size: 0.8rem;
+}
+
+footer button {
+  font-size: 10px !important;
 }
 
 .icons {
@@ -111,7 +117,7 @@ footer {
 
 .footer-button {
   position: absolute;
-  top: 9rem;
+  top: 8rem;
 }
 
 .copyright {
