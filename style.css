@@ -88,10 +88,16 @@ nav {
 }
 
 /* CAROUSELS */
-/* invisible buttons */
+/* invisible buttons and permits hover on last card of the carousel */
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
-  opacity: 0;
+  opacity: 100;
+  width: 5%;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  width: 5%;
 }
 
 h5 {
