@@ -7,6 +7,7 @@
 
 body {
   background-color: rgb(var(--tint));
+  margin-bottom: 7cap;
 }
 .bg-blackish {
   background-color: rgb(var(--tint));
@@ -21,10 +22,14 @@ section,
 main {
   padding-left: var(--pl-universal);
 }
+
+nav {
+  font-size: 14px;
+}
 /* RICORDARE DI MODIFICARE IL BOTTONE */
 .btn-sm {
   border-radius: 0%;
-  border: 2px solid white;
+  border: 1px solid white;
   background-color: black;
 }
 
@@ -98,6 +103,7 @@ footer {
   color: #808080;
   margin-top: 5rem;
   font-size: 0.8rem;
+  cursor: pointer;
 }
 
 footer button {
@@ -122,8 +128,16 @@ footer button {
 
 .copyright {
   position: absolute;
-  bottom: -7rem;
+  bottom: -6rem;
   white-space: nowrap;
+}
+
+main img:hover {
+  border: 2px solid red;
+}
+
+main img {
+  transition: border 500ms cubic-bezier(0.73, 1.22, 0.39, -0.38);
 }
 
 footer .sm-icons {
