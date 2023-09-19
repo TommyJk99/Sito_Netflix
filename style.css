@@ -202,7 +202,7 @@ footer .sm-icons svg {
     margin: 0;
   }
 }
-/* o solve a problem with small screens */
+/*solve a problem with small screens */
 @media screen and (max-width: 575px) {
   html {
     margin-left: 0rem;
