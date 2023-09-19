@@ -17,5 +17,5 @@ window.addEventListener("scroll", showCarousel);
 showCarousel(); //control from the start
 
 $(".carousel").carousel({
-  interval: 8000,
+  interval: 800000,
 });

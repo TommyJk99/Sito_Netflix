@@ -5,6 +5,10 @@
   --genres-button-border: 133, 0, 0;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   background-color: rgb(var(--tint));
 }
@@ -182,6 +186,7 @@ footer .sm-icons svg {
 
 .carousel-inner {
   margin-bottom: -2rem;
+  overflow: visible;
 }
 
 .hide {
@@ -195,5 +200,11 @@ footer .sm-icons svg {
     transform: scale(1);
     font-size: 10px;
     margin: 0;
+  }
+}
+/* o solve a problem with small screens */
+@media screen and (max-width: 575px) {
+  html {
+    margin-left: 0rem;
   }
 }
