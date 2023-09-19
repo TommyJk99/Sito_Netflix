@@ -7,7 +7,6 @@
 
 body {
   background-color: rgb(var(--tint));
-  margin-bottom: 7cap;
 }
 
 .bg-blackish {
@@ -22,6 +21,7 @@ h3 {
 section,
 main {
   padding-left: var(--pl-universal);
+  margin-bottom: -1rem;
 }
 
 nav {
@@ -150,16 +150,27 @@ main img {
   transition: transform 300ms cubic-bezier(0.39, 0.67, 0.34, 1.06);
 }
 
-.carousel-inner {
-  overflow: visible;
-}
-
-main img:hover + svg {
+/* If i put the transition in the hover i can cut the reverse animation */
+/* this should be adjusted for small screens */
+main img:hover + svg,
+img:hover + svg + span {
   position: relative;
   top: -2rem;
+  transform: scale(2);
   z-index: 999999;
   color: white;
   overflow: hidden;
+  opacity: 100;
+  transition: opacity 1000ms cubic-bezier(0.39, 0.67, 0.34, 1.06);
+}
+
+main img + svg,
+img + svg + span {
+  opacity: 0;
+}
+
+.col-2 svg + span {
+  margin-left: 0.5rem;
 }
 
 footer .sm-icons {
@@ -167,4 +178,22 @@ footer .sm-icons {
 }
 footer .sm-icons svg {
   margin-right: 0.3rem;
+}
+
+.carousel-inner {
+  margin-bottom: -2rem;
+}
+
+.hide {
+  display: none;
+}
+
+/* resizing play button and writes on hover */
+@media screen and (max-width: 768px) {
+  main img:hover + svg,
+  img:hover + svg + span {
+    transform: scale(1);
+    font-size: 10px;
+    margin: 0;
+  }
 }
